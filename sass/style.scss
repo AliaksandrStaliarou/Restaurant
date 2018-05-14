@@ -6,19 +6,57 @@
 
 body {
   margin: 0 auto;
-  /*max-width: 1600px;*/
+  min-width: 1600px;
   /*width: 100%;*/
   font-size: 16px;
   font-family: arial, sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  width: 78.125%;
+}
+
 .section_bg-1 {
-  background: url('../img/food-bg-1.jpg');
-  min-height: 750px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ /* background: url('../img/bgLayer-1.jpg');
+  min-height: 750px !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;*/
+
+  .logoNavSocial {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navSocial {
+    width: 69.12%;
+    ul {
+
+    }
+    li {
+      display: inline-block;
+      padding: 30px 1.5%;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+
+  .navSocial nav a {
+    color: #ffffff;
+  }
+
+
+  .logo a {
+    font-family: YesevaOne-Regular, sans;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
 
 }
 

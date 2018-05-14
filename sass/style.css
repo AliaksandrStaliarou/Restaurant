@@ -4,18 +4,44 @@
 
 body {
   margin: 0 auto;
-  /*max-width: 1600px;*/
+  min-width: 1600px;
   /*width: 100%;*/
   font-size: 16px;
   font-family: arial, sans-serif; }
 
+.container {
+  margin: 0 auto;
+  width: 78.125%; }
+
 .section_bg-1 {
-  background: url("../img/food-bg-1.jpg");
-  min-height: 750px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  /* background: url('../img/bgLayer-1.jpg');
+  min-height: 750px !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;*/ }
+  .section_bg-1 .logoNavSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .section_bg-1 .navSocial {
+    width: 69.12%; }
+    .section_bg-1 .navSocial li {
+      display: inline-block;
+      padding: 30px 1.5%; }
+    .section_bg-1 .navSocial a {
+      text-decoration: none; }
+  .section_bg-1 .navSocial nav a {
+    color: #ffffff; }
+  .section_bg-1 .logo a {
+    font-family: YesevaOne-Regular, sans;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none; }
 
 .parallax-window {
   min-height: 750px;
