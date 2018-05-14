@@ -13,10 +13,17 @@ body {
 }
 
 .section_bg-1 {
-  background: url('../img/bgLayer-1.jpg');
+  background: url('../img/food-bg-1.jpg');
   min-height: 750px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0px;
+
+}
+
+.parallax-window {
+  min-height: 750px;
+  background: transparent;
+
 }
