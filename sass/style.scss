@@ -6,8 +6,8 @@
 
 body {
   margin: 0 auto;
-  min-width: 1600px;
-  /*width: 100%;*/
+  /*max-width: 1600px;
+  width: 100%;*/
   font-size: 16px;
   font-family: arial, sans-serif;
 }
@@ -18,36 +18,41 @@ body {
 }
 
 .section_bg-1 {
- /* background: url('../img/bgLayer-1.jpg');
-  min-height: 750px !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;*/
+ /* background-image: url('../img/bgLayer-1.jpg');
+  height: 750px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;*/
 
   .logoNavSocial {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
   }
 
   .navSocial {
     width: 69.12%;
+    /*width: 863px;*/
+    display: flex;
+    justify-content: center;
     ul {
+      display: flex;
 
     }
     li {
       display: inline-block;
-      padding: 30px 1.5%;
+
+      /*padding: 0 1.5%;*/
     }
     a {
+      padding: 0 10px;
       text-decoration: none;
+      color: #ffffff;
     }
   }
 
-
-  .navSocial nav a {
-    color: #ffffff;
-  }
 
 
   .logo a {
@@ -58,10 +63,18 @@ body {
     text-decoration: none;
   }
 
+  .socialIcons a {
+    color: #ffffff;
+  }
+
+  .test {
+    font-size: 120px;
+    color: red;
+  }
+
 }
 
 .parallax-window {
   min-height: 750px;
   background: transparent;
-
 }

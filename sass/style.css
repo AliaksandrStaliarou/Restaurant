@@ -4,8 +4,8 @@
 
 body {
   margin: 0 auto;
-  min-width: 1600px;
-  /*width: 100%;*/
+  /*max-width: 1600px;
+  width: 100%;*/
   font-size: 16px;
   font-family: arial, sans-serif; }
 
@@ -14,34 +14,54 @@ body {
   width: 78.125%; }
 
 .section_bg-1 {
-  /* background: url('../img/bgLayer-1.jpg');
-  min-height: 750px !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;*/ }
+  /* background-image: url('../img/bgLayer-1.jpg');
+  height: 750px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;*/ }
   .section_bg-1 .logoNavSocial {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 0; }
   .section_bg-1 .navSocial {
-    width: 69.12%; }
+    width: 69.12%;
+    /*width: 863px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .section_bg-1 .navSocial ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .section_bg-1 .navSocial li {
       display: inline-block;
-      padding: 30px 1.5%; }
+      /*padding: 0 1.5%;*/ }
     .section_bg-1 .navSocial a {
-      text-decoration: none; }
-  .section_bg-1 .navSocial nav a {
-    color: #ffffff; }
+      padding: 0 10px;
+      text-decoration: none;
+      color: #ffffff; }
   .section_bg-1 .logo a {
     font-family: YesevaOne-Regular, sans;
     font-size: 2.25em;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none; }
+  .section_bg-1 .socialIcons a {
+    color: #ffffff; }
+  .section_bg-1 .test {
+    font-size: 120px;
+    color: red; }
 
 .parallax-window {
   min-height: 750px;
