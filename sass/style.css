@@ -20,6 +20,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;*/ }
+  .section_bg-1 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .section_bg-1 .logo a {
+      padding: 20px 0; }
   .section_bg-1 .logoNavSocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,7 +38,38 @@ body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+  .section_bg-1 .hamburger {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    display: none;
+    cursor: pointer;
+    height: 26px;
+    width: 30px; }
+    .section_bg-1 .hamburger div {
+      margin-bottom: 8.7px;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: #ffffff;
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center; }
+  .section_bg-1 .open_hamburger div:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .section_bg-1 .open_hamburger div:nth-child(2) {
+    width: 0;
+    opacity: 0; }
+  .section_bg-1 .open_hamburger div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
   .section_bg-1 .navSocial {
     /*width: 69.12%;*/
     /*width: 863px;*/
@@ -126,8 +166,36 @@ body {
     .section_bg-1 .container {
       width: 90%; } }
   @media (max-width: 990px) {
-    .section_bg-1 header {
-      background: rgba(0, 0, 0, 0.85); } }
+    .section_bg-1 .wrapper {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85); }
+      .section_bg-1 .wrapper .logoNavSocial {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        .section_bg-1 .wrapper .logoNavSocial .navSocial {
+          display: none; }
+        .section_bg-1 .wrapper .logoNavSocial .open_navSocial {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul li:before {
+              content: none; }
+            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul li:hover a {
+              color: #dab33e; }
+            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul a {
+              padding: 10px 0; }
+        .section_bg-1 .wrapper .logoNavSocial .hamburger {
+          display: block; } }
 
 .parallax-window {
   min-height: 750px;
