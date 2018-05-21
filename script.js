@@ -9,5 +9,11 @@ hamburgerButton.addEventListener('click', openHambugerButton);
 function openHambugerButton() {
     hamburgerButton.classList.toggle('open_hamburger');
     navSocial.classList.toggle('open_navSocial');
+    /*if (navSocial.style.maxHeight){
+        navSocial.style.maxHeight = null;
+    } else {
+        navSocial.style.maxHeight = 285 + "px";
+    }*/
+
 }
 

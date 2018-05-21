@@ -26,25 +26,24 @@ body {
   background-position: 50% 0;*/
 
 
-  .logo {
-    display: flex;
-    align-items: center;
-    a {
-      padding: 20px 0;
-    }
-  }
+
 
   .logoNavSocial {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        margin: 20px 0;
+      }
+    }
   }
 
   .hamburger {
-    position: absolute;
-    right: 0;
-    top: 45%;
     display: none;
     cursor: pointer;
     height: 26px;
@@ -74,6 +73,7 @@ body {
     transform: rotate(-45deg);
   }
 
+
   .navSocial {
     /*width: 69.12%;*/
     /*width: 863px;*/
@@ -96,6 +96,7 @@ body {
       font-size: 1.3125em;
       text-decoration: none;
       color: #ffffff;
+      transition: all 0.3s ease-out;
     }
 
     nav a {
@@ -122,7 +123,7 @@ body {
 
     .socialIcons a {
       font-size: 1.125em;
-      transition: all 0.1s ease-out;
+      transition: all 0.3s ease-out;
     }
 
     .socialIcons a:hover {
@@ -216,25 +217,45 @@ body {
 
 
         .navSocial {
-          display: none;
-        }
-        .open_navSocial {
-          display: flex;
+          flex-direction: column;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
 
+          nav {
+            width: 100%;
 
-          nav ul {
-            flex-direction: column;
-            li:before {
-              content: none;
-            }
-            li:hover a {
-              color: #dab33e;
-            }
+            ul {
+              flex-direction: column;
+              li:before {
+                content: none;
+              }
+              li:hover a {
+                color: #dab33e;
+              }
 
-            a {
-              padding: 10px 0;
+              a {
+                padding: 10px 0;
+              }
             }
           }
+
+
+          .socialIcons {
+            /*display: flex;
+            justify-content: center;*/
+            width: 100%;
+            ul {
+              justify-content: center;
+            }
+            a {
+              padding: 10px;
+            }
+          }
+        }
+        .open_navSocial {
+          max-height: 285px;
+
 
         }
         .hamburger {

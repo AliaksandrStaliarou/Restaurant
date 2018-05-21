@@ -20,30 +20,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;*/ }
-  .section_bg-1 .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .section_bg-1 .logo a {
-      padding: 20px 0; }
   .section_bg-1 .logoNavSocial {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative; }
+    justify-content: space-between; }
+    .section_bg-1 .logoNavSocial .logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .section_bg-1 .logoNavSocial .logo a {
+        margin: 20px 0; }
   .section_bg-1 .hamburger {
-    position: absolute;
-    right: 0;
-    top: 45%;
     display: none;
     cursor: pointer;
     height: 26px;
@@ -94,7 +90,9 @@ body {
       font-family: GenBkBasB, sans;
       font-size: 1.3125em;
       text-decoration: none;
-      color: #ffffff; }
+      color: #ffffff;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
     .section_bg-1 .navSocial nav a {
       padding: 50px 12px; }
     .section_bg-1 .navSocial nav li:before {
@@ -116,8 +114,8 @@ body {
       width: 100%; }
     .section_bg-1 .navSocial .socialIcons a {
       font-size: 1.125em;
-      -webkit-transition: all 0.1s ease-out;
-      transition: all 0.1s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
     .section_bg-1 .navSocial .socialIcons a:hover {
       color: #dab33e; }
   .section_bg-1 .logo a {
@@ -178,22 +176,39 @@ body {
         -ms-flex-pack: start;
         justify-content: flex-start; }
         .section_bg-1 .wrapper .logoNavSocial .navSocial {
-          display: none; }
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-height: 0;
+          overflow: hidden;
+          -webkit-transition: max-height 0.3s ease-out;
+          transition: max-height 0.3s ease-out; }
+          .section_bg-1 .wrapper .logoNavSocial .navSocial nav {
+            width: 100%; }
+            .section_bg-1 .wrapper .logoNavSocial .navSocial nav ul {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column; }
+              .section_bg-1 .wrapper .logoNavSocial .navSocial nav ul li:before {
+                content: none; }
+              .section_bg-1 .wrapper .logoNavSocial .navSocial nav ul li:hover a {
+                color: #dab33e; }
+              .section_bg-1 .wrapper .logoNavSocial .navSocial nav ul a {
+                padding: 10px 0; }
+          .section_bg-1 .wrapper .logoNavSocial .navSocial .socialIcons {
+            /*display: flex;
+            justify-content: center;*/
+            width: 100%; }
+            .section_bg-1 .wrapper .logoNavSocial .navSocial .socialIcons ul {
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center; }
+            .section_bg-1 .wrapper .logoNavSocial .navSocial .socialIcons a {
+              padding: 10px; }
         .section_bg-1 .wrapper .logoNavSocial .open_navSocial {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column; }
-            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul li:before {
-              content: none; }
-            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul li:hover a {
-              color: #dab33e; }
-            .section_bg-1 .wrapper .logoNavSocial .open_navSocial nav ul a {
-              padding: 10px 0; }
+          max-height: 285px; }
         .section_bg-1 .wrapper .logoNavSocial .hamburger {
           display: block; } }
 
