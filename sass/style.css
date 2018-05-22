@@ -144,11 +144,13 @@ body {
     .section_bg-1 div.container div a:first-child {
       background-color: rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(0, 0, 0, 0.5);
-      margin-right: 1%; }
+      margin-right: 1%;
+      white-space: nowrap; }
     .section_bg-1 div.container div a:last-child {
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.3);
-      margin-left: 1%; }
+      margin-left: 1%;
+      white-space: nowrap; }
     .section_bg-1 div.container div a:hover {
       border: 1px solid #ffffff; }
   .section_bg-1 h1 {
@@ -156,9 +158,17 @@ body {
     font-size: 5.625em;
     text-align: center;
     color: #ffffff; }
-  .section_bg-1 div.container h1:first-child {
-    padding-top: 13%; }
-  .section_bg-1 div.container h1:nth-child(2) {
+  .section_bg-1 .moto {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;*/ }
+    .section_bg-1 .moto .pillow {
+      /*height: 100px;*/ }
+    .section_bg-1 .moto h1 {
+      line-height: 1.2em; }
+  .section_bg-1 .moto h1:first-child {
+    padding-top: 10%; }
+  .section_bg-1 .moto h1:nth-child(2) {
     padding-bottom: 5%; }
   @media (max-width: 1090px) {
     .section_bg-1 .container {
@@ -176,6 +186,12 @@ body {
         -ms-flex-pack: start;
         justify-content: flex-start; }
         .section_bg-1 .wrapper .logoNavSocial .navSocial {
+          position: absolute;
+          top: 76px;
+          left: 0;
+          padding: 0 5%;
+          background: black;
+          width: 100%;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -211,7 +227,33 @@ body {
           max-height: 285px; }
         .section_bg-1 .wrapper .logoNavSocial .hamburger {
           display: block; } }
+  @media (max-width: 767px) {
+    .section_bg-1 .moto h1 {
+      font-size: 4.3em;
+      line-height: 1.2em; } }
 
 .parallax-window {
   min-height: 750px;
   background: transparent; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out; }
+
+.sticky + .moto {
+  padding-top: 121px; }
+
+/*****************/
+/*pattern1*/
+/******************/
+.pattern1 {
+  background-image: url("../img/pattern-1.jpg");
+  height: 710px;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0; }
