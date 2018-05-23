@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   width: 100%;
+  background-size: auto;
   font-size: 16px;
   font-family: arial, sans-serif; }
 
@@ -256,4 +257,21 @@ body {
   /*background-attachment: fixed;*/
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0; }
+  background-position: 50% 0;
+  width: 100%; }
+  .pattern1 .pattern_cookAndDish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 710px; }
+    .pattern1 .pattern_cookAndDish .pattern_cookAndDish_cook {
+      -ms-flex-preferred-size: 430px;
+      flex-basis: 430px; }

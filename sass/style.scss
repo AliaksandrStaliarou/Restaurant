@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   width: 100%;
+  background-size: auto;
   font-size: 16px;
   font-family: arial, sans-serif;
 }
@@ -327,5 +328,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
+  width: 100%;
+
+  .pattern_cookAndDish {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 710px;
+
+    .pattern_cookAndDish_cook {
+      flex-basis: 430px;
+    }
+
+    .pattern_cookAndDish_dish {
+
+      img {
+
+      }
+    }
+
+  }
+
+
+  @media (min-width: 1090px) {
+    .pattern_cookAndDish_dish img {
+
+    }
+  }
 }
+
+
 
