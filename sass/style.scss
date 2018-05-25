@@ -410,6 +410,8 @@ body {
 .fineIngedients_wrapper {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 
   .fineIngedients_wrapper_container {
     display: flex;
@@ -443,9 +445,7 @@ body {
     h2, p {
       color: #ffffff;
     }
-    div img {
 
-    }
     .fineIngedients_wrapper_container_ingredients {
       display: flex;
       justify-content: space-between;
@@ -457,7 +457,38 @@ body {
     .fineIngedients_wrapper_container {
       width: 100%;
     }
+
+    .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      img {
+        margin: 10px;
+      }
+    }
+
   }
+
+  @media all and (max-width: 482px) {
+    .fineIngedients_wrapper_container {
+      text-align: center;
+    }
+  }
+
+  @media all and (max-width: 416px) {
+    .fineIngedients_wrapper_container {
+      padding: 10px;
+    }
+    .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100px;
+      }
+    }
+
+  }
+
+
 
 }
 

@@ -336,7 +336,11 @@ body {
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
   .fineIngedients_wrapper .fineIngedients_wrapper_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -378,4 +382,27 @@ body {
       width: 100%; }
   @media all and (max-width: 945px) {
     .fineIngedients_wrapper .fineIngedients_wrapper_container {
-      width: 100%; } }
+      width: 100%; }
+    .fineIngedients_wrapper .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .fineIngedients_wrapper .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients img {
+        margin: 10px; } }
+  @media all and (max-width: 482px) {
+    .fineIngedients_wrapper .fineIngedients_wrapper_container {
+      text-align: center; } }
+  @media all and (max-width: 416px) {
+    .fineIngedients_wrapper .fineIngedients_wrapper_container {
+      padding: 10px; }
+    .fineIngedients_wrapper .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .fineIngedients_wrapper .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients img {
+        width: 100px; } }
