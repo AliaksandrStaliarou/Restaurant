@@ -406,3 +406,95 @@ body {
       align-items: center; }
       .fineIngedients_wrapper .fineIngedients_wrapper_container .fineIngedients_wrapper_container_ingredients img {
         width: 100px; } }
+
+/***********************/
+/*MENU*/
+/***********************/
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 100px 0; }
+
+.menuContainer_item1 h2,
+.menuContainer_item2 h2 {
+  font-family: YesevaOne-Regular, sans;
+  font-size: 2.25em;
+  color: #cc9900; }
+
+.menuContainer_item1 h2, .menuContainer_item1 figure,
+.menuContainer_item2 h2,
+.menuContainer_item2 figure {
+  text-align: center; }
+
+.menuContainer_item1 figure,
+.menuContainer_item2 figure {
+  padding: 5% 0; }
+
+.menuContainer_item1 h3,
+.menuContainer_item2 h3 {
+  position: relative;
+  padding-bottom: 10px;
+  font-family: YesevaOne-Regular, sans;
+  font-size: 1.3125em;
+  color: #c89f2d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(200, 159, 45, 0.5); }
+  .menuContainer_item1 h3 span,
+  .menuContainer_item2 h3 span {
+    position: absolute;
+    right: 0; }
+
+.menuContainer_item1 li,
+.menuContainer_item2 li {
+  position: relative;
+  padding-bottom: 50px; }
+
+.menuContainer_item1 p,
+.menuContainer_item2 p {
+  padding-top: 10px;
+  font-family: Lato-Regular, sans;
+  font-size: 1em;
+  color: #4c4c4c; }
+
+.menuContainer_item1 li.special:before,
+.menuContainer_item2 li.special:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: 32px;
+  left: -10px;
+  right: -10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(200, 159, 45, 0.5); }
+
+.menuContainer_item1 li.special:after,
+.menuContainer_item2 li.special:after {
+  content: "Special";
+  position: absolute;
+  right: -10px;
+  top: -36px;
+  padding: 5px 10px;
+  background: rgba(200, 159, 45, 0.8);
+  color: #ffffff; }
+
+.menuContainer_item1 ul {
+  padding: 0 35px 20px 0; }
+
+.menuContainer_item2 ul {
+  padding: 0 0 20px 35px; }
+
+@media all and (max-width: 943px) {
+  .menuContainer_item1,
+  .menuContainer_item2 {
+    width: 100%; }
+  .menuContainer_item1 ul {
+    padding: 0 0 20px 0; }
+  .menuContainer_item2 ul {
+    padding: 0 0 20px 0; } }
