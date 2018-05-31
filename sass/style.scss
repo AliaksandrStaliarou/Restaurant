@@ -26,6 +26,7 @@ body {
   background-size: cover;
   background-position: 50% 0;*/
   height: 750px;
+  /*height: 1067px;*/
 
 
 
@@ -324,6 +325,7 @@ body {
   width: 100%;
   background: black;
   transition: background 1s ease-out;
+  z-index: 1;
 }
 
 .sticky + .moto {
@@ -498,7 +500,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 100px 0;
+  padding: 100px 0 30px 0;
 }
 
 .menuContainer_item1,
@@ -556,13 +558,15 @@ body {
     top: -36px;
     padding: 5px 10px;
     background: rgba(200, 159, 45, 0.8);
+    font-family: Lato-Regular, sans;
+    font-size: 1em;
     color: #ffffff;
   }
 }
 
 .menuContainer_item1 {
   ul {
-    padding: 0 35px 20px 0
+    padding: 0 35px 20px 0;
   }
 }
 
@@ -588,6 +592,71 @@ body {
     ul {
       padding: 0 0 20px 0;
     }
+  }
+}
+
+
+/*********************/
+/*CAROUSEL*/
+/*********************/
+
+.guestReviews {
+  height: 758px;
+}
+
+.guestReviews_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.guestReviews_wrapper_container {
+  text-align: center;
+  width: 770px;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  h2 {
+    font-family: YesevaOne-Regular, sans;
+    font-size: 2.25em;
+    color: #ffffff;
+  }
+  img {
+    padding: 20px 0;
+  }
+}
+
+.carousel {
+
+}
+
+.carousel_item {
+  position: relative;
+  padding: 0 40px;
+  i {
+    position: absolute;
+    left: 0;
+    color: #989a96;
+    font-size: 2em;
+    transform: rotate(180deg);
+  }
+  p {
+    font-family: GenBkBasB, sans;
+    font-size: 1.5625em;
+    color: #ffffff;
+  }
+  p:last-child {
+    padding-top: 40px;
+    font-family: Lato-Regular, sans;
+    font-size: 1.125em;
+    color: #ffffff;
+  }
+}
+
+
+@media all and (max-width: 945px) {
+  .guestReviews_wrapper_container {
+    width: 100%;
   }
 }
 
