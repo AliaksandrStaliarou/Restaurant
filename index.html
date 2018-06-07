@@ -7,8 +7,16 @@
     <!--Reset css-->
     <link href="reset.css" rel="stylesheet">
 
+    <!--Owl Carousel2-->
+    <link rel="stylesheet" href="libs/owlCarousel2/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owlCarousel2/owl.theme.default.css">
+
     <!--Fontello-->
     <link rel="stylesheet" href="fontelloCss/fontello.css">
+
+    <!--Datepicker-->
+    <link rel="stylesheet" href="libs/datepicker/jquery-ui.structure.css"/>
+    <link rel="stylesheet" href="libs/datepicker/jquery-ui.theme.css"/>
 
     <!--MAIN CSS-->
     <link rel="stylesheet" href="fonts.css"/>
@@ -187,15 +195,89 @@
             </figure>
             <div class="carousel owl-carousel owl-theme">
                 <blockquote class="carousel_item item">
-                    <i class="icon-quote rotate-180"></i>
+                    <i class="icon-quote"></i>
                     <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more.
                         Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!</p>
                     <p>Stop in today and check us out!</p>
                     <p>- food inc, New York</p>
                 </blockquote>
+                <blockquote class="carousel_item item itemSmall">
+                    <i class="icon-quote"></i>
+                    <p>The menu, organized by category, and complemented with corresponding savory sauces, guides diners to steakhouse bliss.
+                        Definitely the best choice!</p>
+                    <p>- Steakhouse bliss</p>
+                </blockquote>
+                <blockquote class="carousel_item item itemSmall">
+                    <i class="icon-quote"></i>
+                    <p>A charmingly original restaurant in a neighborhood starved for good fare.
+                        Greek cuisine with drop-dead delicious ingredients making every entree an experience.</p>
+                    <p>- Farm House</p>
+                </blockquote>
+                <blockquote class="carousel_item item itemSmall">
+                    <i class="icon-quote"></i>
+                    <p>The ideal spot for any occasion, Lambda Restaurant serves dinner seven nights a week, and serves lunch Monday through Friday, when the room is awash in sunlight.</p>
+                    <p>- Athens Square</p>
+                </blockquote>
             </div>
         </div>
     </div>
+</section>
+
+<section class="container jtrf">
+    <div class="jtrf_images">
+        <figure>
+            <img src="img/formImage-1.jpg" alt="rice with meat"/>
+        </figure>
+        <figure>
+            <img src="img/formImage-2.jpg" alt="muesli"/>
+        </figure>
+    </div>
+    <div class="jtrf_form">
+        <h2>Just the right food</h2>
+        <figure><img src="img/divider.png" alt="divider"/></figure>
+        <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more.
+            Perfect materials and freshly baked food.</p>
+        <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!
+            Stop in today and check us out! Perfect materials and freshly baked food.</p>
+
+        <form action="#" method="post">
+            <div class="jtrf_form_nameEmail">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="your name*" required/>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your email*" required/>
+                </div>
+            </div>
+            <div class="jtrf_form_datePartynumber">
+                <div>
+                    <label for="datepicker">Date</label>
+                    <input type="text" id="datepicker" placeholder="date*"/>
+                </div>
+                <div>
+                    <label for="partyNumber">Party number</label>
+                    <select id="partyNumber" placeholder="party number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Book now!"/>
+        </form>
+    </div>
+
 </section>
 
 <section>
@@ -222,6 +304,9 @@
 
 
 <script src="libs/jQuery.js"></script>
+<script src="libs/datepicker/jquery-ui.js"></script>
+
+<script src="libs/owlCarousel2/owl.carousel.js"></script>
 <script src="libs/parallax.js"></script>
 <!--<script type="text/javascript" src="libs/skrollr.min.js"></script>
 <script type="text/javascript">

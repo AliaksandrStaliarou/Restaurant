@@ -12,3 +12,8 @@
     font-family: Lato-Regular;
     src: url(font/Lato-Regular.ttf);
 }
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(font/OpenSans-Bold.ttf);
+}
