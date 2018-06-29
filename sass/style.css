@@ -631,6 +631,7 @@ form {
     color: #d0b157; }
   form input,
   form select {
+    outline-color: #d0b157;
     width: 180px;
     height: 30px; }
   form input, form select, form label {
@@ -682,7 +683,25 @@ form {
       width: 100%; } }
 
 @media all and (max-width: 943px) {
+  .jtrf {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 60px 0; }
   .jtrf_images {
-    width: 415px; }
+    width: 510px; }
     .jtrf_images img {
-      width: 100%; } }
+      width: 100%; }
+  .jtrf_form {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .jtrf_form h2 {
+      padding-top: 40px; }
+    .jtrf_form img {
+      padding: 5% 0; }
+  form input:not([type="submit"]),
+  form select {
+    width: 100%; }
+  .jtrf_form_nameEmail,
+  .jtrf_form_datePartynumber {
+    display: block; } }

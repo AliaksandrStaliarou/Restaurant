@@ -734,6 +734,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
+
   padding-top: 30px;
   label {
     font-family: OpenSans-Bold, sans-serif;
@@ -742,6 +743,7 @@ form {
   }
   input,
   select {
+    outline-color: #d0b157;
     width: 180px;
     height: 30px;
   }
@@ -814,12 +816,36 @@ form {
 }
 
 @media all and (max-width: 943px) {
+  .jtrf {
+    justify-content: center;
+    padding: 60px 0;
+  }
   .jtrf_images  {
-    width: 415px;
+    width: 510px;
     img {
       width: 100%;
     }
   }
+  .jtrf_form {
+    flex-basis: 100%;
+    h2 {
+      padding-top: 40px;
+    }
+    img {
+      padding: 5% 0;
+    }
+  }
+  form {
+    input:not([type="submit"]),
+    select {
+      width: 100%;
+    }
+  }
+  .jtrf_form_nameEmail,
+  .jtrf_form_datePartynumber {
+    display: block;
+  }
+
 }
 
 
