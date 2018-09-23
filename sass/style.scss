@@ -747,6 +747,11 @@ form {
     width: 180px;
     height: 30px;
   }
+  input:focus,
+  select:focus {
+    border-color: transparent;
+    background-color: rgba(208, 177, 87, .05);
+  }
   input, select, label {
     display: block;
   }
