@@ -854,6 +854,61 @@ form {
 }
 
 
+/*************/
+/*FOOTER*/
+/*************/
+
+footer {
+  background: #191919;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer_item {
+  margin: 65px 0;
+  width: 350px;
+  text-align: center;
+  h2 {
+    font-family: YesevaOne-Regular, sans;
+    font-size: 1.3125em;
+    color: #fefefe;
+
+  }
+  img {
+    padding: 18px 0;
+  }
+  p {
+    font-family: OpenSans-Regular, sans;
+    color: #f0f0f0;
+    span {
+      font-family: OpenSans-Bold, sans;
+    }
+  }
+}
+
+
+@media all and (max-width: 1360px) {
+  .footer_item {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 1153px) {
+  .footer_item {
+    width: 284px;
+  }
+}
+
+@media all and (max-width: 943px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+
 
 
 

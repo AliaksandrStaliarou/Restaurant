@@ -709,3 +709,47 @@ form {
   .jtrf_form_nameEmail,
   .jtrf_form_datePartynumber {
     display: block; } }
+
+/*************/
+/*FOOTER*/
+/*************/
+footer {
+  background: #191919; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.footer_item {
+  margin: 65px 0;
+  width: 350px;
+  text-align: center; }
+  .footer_item h2 {
+    font-family: YesevaOne-Regular, sans;
+    font-size: 1.3125em;
+    color: #fefefe; }
+  .footer_item img {
+    padding: 18px 0; }
+  .footer_item p {
+    font-family: OpenSans-Regular, sans;
+    color: #f0f0f0; }
+    .footer_item p span {
+      font-family: OpenSans-Bold, sans; }
+
+@media all and (max-width: 1360px) {
+  .footer_item {
+    width: 300px; } }
+
+@media all and (max-width: 1153px) {
+  .footer_item {
+    width: 284px; } }
+
+@media all and (max-width: 943px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
